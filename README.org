@@ -1,0 +1,19 @@
+http://verisimilitudes.net/2017-12-31
+
+The ECMA-48 standard can be found here: https://www.ecma-international.org/publications/standards/Ecma-048.htm
+
+The CL-ECMA-48 library  was created to serve my needs  when writing an
+interactive program that creates a more complex terminal interface. In
+order  to clean  the source  of the  aforementioned program  a tad,  I
+decided to  split the  functionality into  a library.  While I  used a
+small fraction of these control  functions, the library implements all
+162 that the ECMA-48 standard specifies, as this was the most sensible
+option. The  library also optimizes  the control functions  emitted to
+the  most  compact  representation,   in  contrast  to  the  preceding
+handwritten functions  which were much  less discerning and  these are
+also designed to be efficient themselves and avoid any allocations and
+other costly  operations. Due to  all of  this, the library  is rather
+niggardly and  there's no  reason any  of it  should consume  any more
+space once loaded nor should it perform poorly.
+
+This library is licensed under the GNU Affero General Public License version three.
